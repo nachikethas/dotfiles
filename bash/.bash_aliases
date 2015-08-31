@@ -58,6 +58,8 @@ alias lr='ll -R'           #  Recursive ls.
 alias la='ll -A'           #  Show hidden files.
 alias tree='tree -Csuh'    #  Nice alternative to 'recursive ls' ...
 
+alias l='ls'               #  By default do pretty ls
+
 #-------------------------------------------------------------
 # Tailoring 'less'
 #-------------------------------------------------------------
