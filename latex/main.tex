@@ -1,0 +1,65 @@
+% Prior to using this template, please update the appropriate
+% style files used.
+\documentclass[pdftex,10pt,conference,letterpaper]{}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}                    % Don't use Computer Modern
+\usepackage{pslatex}                    % This uses postscript fonts
+\usepackage[dvips]{graphicx}            % Useful for inserting images
+\usepackage{siunitx}                    % For SI units
+\usepackage[cmex10,intlimits]{amsmath}  % For the math
+\usepackage{amsthm}                     % The package used for theorems
+\usepackage{amssymb}                    % Math symbols
+\usepackage{amsfonts}                   % For script R and other symbols
+%\usepackage[hidelinks,
+%pagebackref=false]{hyperref}            % Make references clickable
+%\usepackage[all]{hypcap}                % Figures visible on click
+\usepackage[final,tracking=true,
+kerning=true,spacing=true,
+factor=1100]{microtype}                 % For overall prettiness
+\usepackage{booktabs}                   % For pretty tables.
+\usepackage{array}                      % For pretty tables.
+
+% On Microtype:
+% Intro: http://www.khirevich.com/latex/microtype/
+% Manual: http://mirror.math.ku.edu/tex-archive/macros/latex/contrib/microtype/microtype.pdf
+
+\input{./macrosN.tex}           % Some useful macros
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{}
+
+\author{}
+
+% make the title area
+\maketitle
+
+\begin{abstract}
+%\boldmath
+%    \input{./tex/abstract.tex}
+\end{abstract}
+
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+%\IEEEpeerreviewmaketitle
+
+\section{Introduction}\label{sec:intro}
+%\input{./tex/intro.tex}
+
+\section{Related Work}\label{sec:related}
+%\input{./tex/relatedW.tex}
+
+\section{Evaluation}\label{sec:evaluation}
+%\input{./tex/evaluation.tex}
+
+\section{Conclusion}\label{sec:conclusion}
+%\input{./tex/conclusion.tex}
+
+%\bibliographystyle{IEEEtran}
+%\bibliography{IEEEabrv,refs}
+
+% that's all folks
+\end{document}
