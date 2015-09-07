@@ -81,3 +81,10 @@ antigen theme ys
 
 # Tell antigen that you're done.
 antigen apply
+
+# Aliases
+if [ -f ~/.zshrc_aliases ]; then
+    source ~/.zshrc_aliases
+else
+    print "404: ~/.zshrc_aliases not found."
+fi
