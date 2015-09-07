@@ -1,0 +1,12 @@
+" Auto wrap lines at 72 characters
+set wrap
+set textwidth=72
+"set formatoptions+=t
+
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex':
+let g:tex_flavor = 'latex'
+
+" Retain the default leader(s). "," is useful :)
+let g:spf13_leader='\'
