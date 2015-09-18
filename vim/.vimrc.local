@@ -10,3 +10,6 @@ let g:tex_flavor = 'latex'
 
 " Retain the default leader(s). "," is useful :)
 let g:spf13_leader='\'
+
+" Auto conversion LaTeX -> Unicode in .jl (needs julia-vim)
+let g:latex_to_unicode_auto = 1
