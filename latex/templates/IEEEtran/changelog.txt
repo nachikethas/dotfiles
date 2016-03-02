@@ -1,12 +1,37 @@
 
 
  Changelog history of the IEEEtran LaTeX class.
- 2014/09/17
+ 2015/08/26
  by Michael Shell (MDS)
  http://www.michaelshell.org/
 
 
- 9/2014 V1.8a (MDS) changes:
+ 2015/08/26 V1.8b (MDS) changes:
+
+ 1) Added new comsoc mode for the IEEE Communications Society.
+    This mode (at present) only invokes the use of the newtxmath math fonts.
+ 
+ 2) Revised IEEEeqnarray column specifications to work with active " 
+    (or other punctuation catcode changes) as with babel under the
+    german or ngerman language modes. 
+    Thanks to Stefan M. Moser for reporting this problem.
+
+ 3) Added \indexspace and other index related macros as newer versions of
+    article.cls now do. These macros are needed to avoid an error when
+    using the glossaries package.
+    Thanks to Sebastian Nyberg for suggesting this change.
+
+ 4) Fixed odd/even page header font bug under compsoc mode and
+    other page style code improvements.
+    Thanks to Marco Paolieri for reporting this problem.
+
+ 5) Added hooks to allow for easy control of spacing above title.
+
+ 6) Added the \IEEEnoauxwrite command.
+    Thanks to Sudarshan Mukherjee for suggesting this feature.
+
+
+ 2014/09/17 V1.8a (MDS) changes:
 
  1) Extensive rework of the compsoc mode to comply with the latest standards
     of the IEEE Computer Society.
@@ -33,7 +58,7 @@
 
 
 *******
- 12/2012 V1.8 (MDS) changes:: 
+ 2012/12/27 V1.8 (MDS) changes:: 
 
  1) New transmag class option to support the IEEE Transactions on Magnetics
     format. Thanks to Wei Yingkang, Sangmin Suh and Benjamin Gaussens
@@ -90,7 +115,7 @@
 
 
 *******
- 3/2007 V1.7a (MDS) changes:
+ 2007/03/05 V1.7a (MDS) changes:
 
  1) Corrected problem of unwanted two column peer review title page format.
     Thanks to Virgilio Rodriguez for reporting this bug.
@@ -101,7 +126,7 @@
 
 
 *******
- 1/2007 V1.7 (MDS) changes:
+ 2007/01/11 V1.7 (MDS) changes:
 
  1) New class option compsoc to support the IEEE Computer Society format.
 
@@ -225,7 +250,7 @@
 
 
 *******
- 09/2005 V1.6c (MDS) changes:
+ 2005/09/13 V1.6c (MDS) changes:
 
  1) Changed endfigure/endfloat definitions so as not to cause problems with
     preview-LaTeX and other packages. Thanks to Stephan Heuel and David
@@ -234,7 +259,7 @@
 
 
 *******
- 11/2002 V1.6b (MDS) changes:
+ 2002/11/18 V1.6b (MDS) changes:
 
  1) Fixed problem with figure captions when using hyperref. Thanks to 
     Leandro Barajas and Michael Bassetti for reporting this bug.
@@ -282,7 +307,7 @@
 
 
 *******
- 7/2002 V1.6 (MDS) changes:
+ 2002/08/13 V1.6 (MDS) changes:
  
  1) Added conference mode via conference option. Defaults to the
     traditional journal mode. e.g., \documentclass[conference]{IEEEtran}
@@ -560,7 +585,7 @@
 
 
 *******
- 7/2001 V1.5 (MDS) changes:
+ 2001/07/26 V1.5 (MDS) changes:
 
 
  1) Fixed \and within \author bug: (! Misplaced \crcr. \endtabular ->\crcr)
@@ -616,7 +641,7 @@
 
 
 *******
- 3/2001 V1.4 (MDS) changes:
+ 2001/03/15 V1.4 (MDS) changes:
 
 
  1) New "draftcls" and "final" options have been added.
@@ -640,7 +665,7 @@
 
 
 *******
- 1/2001 V1.3 
+ 2001/01/18 V1.3 
  Michael Shell (MDS) made extensive changes and additions:
 
 
@@ -710,7 +735,7 @@
 
 
  *******
- 9/2000 (JVH) changes: (now designated as V1.2)
+ 2000/09/06 (JVH) changes: (now designated as V1.2)
  
  made some corrections to get closer to LaTeX2e
  20000906 Juergen v.Hagen
