@@ -1,12 +1,12 @@
 
-September 17, 2014
+August 26, 2015
 
 
 IEEEtran is a LaTeX class for authors of the Institute of Electrical and
 Electronics Engineers (IEEE) transactions journals and conferences.
 The latest version of the IEEEtran package can be found at CTAN:
 
-http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
+http://www.ctan.org/pkg/ieeetran
 
 as well as within IEEE's site:
 
@@ -18,21 +18,47 @@ website:
 
 http://www.michaelshell.org/tex/ieeetran/
 
-Version 1.8a has a number of significant changes over the v1.8 release.
-For a full list of changes, please read the file changelog.txt. The most
-notable changes include:
+Version 1.8b has a number of significant changes over the v1.8a release.
+For a full history of changes, please read the file changelog.txt.
+The most notable changes in this release include:
+
+ 1) Added new comsoc mode for the IEEE Communications Society.
+    This mode (at present) only invokes the use of the newtxmath math fonts.
+ 
+ 2) Revised IEEEeqnarray column specifications to work with active " 
+    (or other punctuation catcode changes) as with babel under the
+    german or ngerman language modes. 
+    Thanks to Stefan M. Moser for reporting this problem.
+
+ 3) Added \indexspace and other index related macros as newer versions of
+    article.cls now do. These macros are needed to avoid an error when
+    using the glossaries package.
+    Thanks to Sebastian Nyberg for suggesting this change.
+
+ 4) Fixed odd/even page header font bug under compsoc mode and
+    other page style code improvements.
+    Thanks to Marco Paolieri for reporting this problem.
+
+ 5) Added hooks to allow for easy control of spacing above title.
+
+ 6) Added the \IEEEnoauxwrite command.
+    Thanks to Sudarshan Mukherjee for suggesting this feature.
 
 
- 1) Extensive rework of the compsoc mode to comply with the latest standards
-    of the IEEE Computer Society.
+NOTE: Take care not to confuse the "comsoc" and "compsoc" class
+options/modes as they are very different:
 
- 2) Fixed abstract, index terms and diamond line for compsoc technotes.
+comsoc  ==> IEEE Communications Society
+compsoc ==> IEEE Computer Society
 
- 3) New \IEEEraisesectionheading{} command to provide for the special
-    raised first section heading of Computer Society journal papers.
-
- 4) Internal code improvements for page setup and command argument
-    processing.
+The comsoc mode requires that an acceptable Times math font be available on
+the LaTeX system. This requirement will be enforced by IEEEtran in comsoc
+mode. Either the freely available newtxmath font by Michael Sharpe
+http://www.ctan.org/pkg/newtx
+(version 1.451, July 28, 2015 or later is recommended)
+or the commercial MathTime font (e.g., mtpro2.sty) is acceptable.
+See Section II-D (2.4) "Class Options - comsoc, compsoc, transmag" of
+the IEEEtran HOWTO for more details.
 
 
 Best wishes for all your publication endeavors,
@@ -51,14 +77,17 @@ changelog.txt          - The revision history.
 
 IEEEtran_HOWTO.pdf     - The IEEEtran LaTeX class user manual.
 
-bare_conf.tex          - A bare bones starter file for conference papers.
+bare_conf.tex          - A bare bones starter file for IEEE conference papers.
 
-bare_conf_compsoc.tex  - A bare bones starter file for Computer Society
+bare_conf_compsoc.tex  - A bare bones starter file for IEEE Computer Society
                          conference papers.
 
-bare_jrnl.tex          - A bare bones starter file for journal papers.
+bare_jrnl.tex          - A bare bones starter file for IEEE journal papers.
 
-bare_jrnl_compsoc.tex  - A bare bones starter file for Computer Society
+bare_jrnl_comsoc.tex   - A bare bones starter file for IEEE Communications
+                         Society journal papers.
+
+bare_jrnl_compsoc.tex  - A bare bones starter file for IEEE Computer Society
                          journal papers.
 
 bare_jrnl_transmag.tex - A bare bones starter file for IEEE Transactions
@@ -67,7 +96,7 @@ bare_jrnl_transmag.tex - A bare bones starter file for IEEE Transactions
 bare_adv.tex           - A bare bones starter file showing advanced
                          techniques such as conditional compilation,
                          hyperlinks, PDF thumbnails, etc. The illustrated
-                         format is for a Computer Society journal paper.
+                         format is for an IEEE Computer Society journal paper.
 
 ***************************************************************************
 Legal Notice:
@@ -75,7 +104,7 @@ This code is offered as-is without any warranty either expressed or
 implied; without even the implied warranty of MERCHANTABILITY or
 FITNESS FOR A PARTICULAR PURPOSE! 
 User assumes all risk.
-In no event shall IEEE or any contributor to this code be liable for
+In no event shall the IEEE or any contributor to this code be liable for
 any damages or losses, including, but not limited to, incidental,
 consequential, or any other damages, resulting from the use or misuse
 of any information contained here.
@@ -94,5 +123,6 @@ Retain all contribution notices and credits.
 
 File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
                    bare_conf.tex, bare_conf_compsoc.tex, bare_jrnl.tex,
-                   bare_jrnl_compsoc.tex, bare_jrnl_transmag.tex
+                   bare_jrnl_comsoc.tex, bare_jrnl_compsoc.tex,
+                   bare_jrnl_transmag.tex
 ***************************************************************************
