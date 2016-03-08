@@ -48,8 +48,9 @@ antigen bundle pip
 antigen bundle archlinux
 antigen bundle command-not-found
 
-# Requires autoenv: https://github.com/kennethreitz/autoenv
-antigen bundle autoenv
+# Enable autoenv
+# See: https://github.com/Tarrasch/zsh-autoenv
+antigen-bundle Tarrasch/zsh-autoenv
 
 # More vi-like key bindings for zsh. See:
 # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/vi-mode
