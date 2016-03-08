@@ -63,7 +63,9 @@ antigen bundle rimraf/k
 #antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Suggestions for commands
+# Use cntrl+e to accept the current suggestion
 antigen bundle tarruda/zsh-autosuggestions
+bindkey '^e' autosuggest-accept
 
 # bd to go back a directory
 antigen-bundle Tarrasch/zsh-bd
