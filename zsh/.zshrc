@@ -30,9 +30,12 @@ autoload run-help-svk
 unalias run-help
 alias help=run-help
 
-# Fish like syntax highligting
+# Arch Linux: Fish like syntax highlighting. Install the arch package
+# zsh-syntax-highlighting for the below line to work.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Using antigen to manage all zsh plugins.
+# See https://github.com/zsh-users/antigen
 source /home/sooraj/Code/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
