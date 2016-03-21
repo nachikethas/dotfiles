@@ -13,8 +13,9 @@
 # *.ps
 # *.eps
 # *.pdf
-# but ignore the main document
+# but ignore the main document and converted images
 main.pdf
+*eps-converted-to.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
