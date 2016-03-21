@@ -67,6 +67,18 @@ Michael Shell
 http://www.michaelshell.org/
 
 
+***************************** Subdirectories ******************************
+
+bibtex   - The IEEEtran BibTeX style package.
+
+extras   - Supplementary material that may be of interest.
+
+testflow - The testflow diagnostic suite for verifying PS/PDF output.
+
+tools    - The IEEEtrantools.sty package which provides several commands
+           from the IEEEtran.cls file for use with other LaTeX classes.
+
+
 ********************************** Files **********************************
 
 README                 - This file.
@@ -122,7 +134,7 @@ Retain all contribution notices and credits.
 ** renaming them and changing author support contact information. **
 
 File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
-                   bare_conf.tex, bare_conf_compsoc.tex, bare_jrnl.tex,
-                   bare_jrnl_comsoc.tex, bare_jrnl_compsoc.tex,
-                   bare_jrnl_transmag.tex
+                   bare_conf.tex, bare_conf_compsoc.tex,
+                   bare_jrnl.tex, bare_jrnl_comsoc.tex,
+                   bare_jrnl_compsoc.tex, bare_jrnl_transmag.tex
 ***************************************************************************
