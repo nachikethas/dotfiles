@@ -1,6 +1,12 @@
 % Prior to using this template, please update the appropriate
 % style files used.
-\documentclass[pdftex,10pt,conference,letterpaper]{}
+\documentclass[
+    pdftex,
+    10pt,
+    conference,
+    draft,
+    letterpaper
+]{IEEEtran}
 
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}                    % Don't use Computer Modern
@@ -16,7 +22,7 @@
     colorlinks=true,
     allcolors=magenta,
     pagebackref=false
-]{hyperref}            % Make references clickable
+]{hyperref}                             % Make references clickable
 \usepackage[all]{hypcap}                % Figures visible on click
 \usepackage[
     final,
@@ -24,7 +30,7 @@
     kerning=true,
     spacing=true,
     factor=1100
-]{microtype}                 % For overall prettiness
+]{microtype}                            % For overall prettiness
 \usepackage{booktabs}                   % For pretty tables.
 \usepackage{array}                      % For pretty tables.
 
@@ -32,22 +38,20 @@
 % Intro: http://www.khirevich.com/latex/microtype/
 % Manual: http://mirror.math.ku.edu/tex-archive/macros/latex/contrib/microtype/microtype.pdf
 
-\input{./macrosN.tex}           % Some useful macros
+\input{./macrosN.tex}                   % Some useful macros
 
 \begin{document}
-%
-% paper title
-% can use linebreaks \\ within to get better formatting as desired
+
+% Paper title
 \title{}
 
 \author{}
 
-% make the title area
+% Make the title area
 \maketitle
 
 \begin{abstract}
-%\boldmath
-%    \input{./tex/abstract.tex}
+%\input{./tex/abstract.tex}
 \end{abstract}
 
 % For peerreview papers, this IEEEtran command inserts a page break and
@@ -69,5 +73,4 @@
 %\bibliographystyle{IEEEtran}
 %\bibliography{IEEEabrv,refs}
 
-% that's all folks
 \end{document}
