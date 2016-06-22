@@ -3,4 +3,5 @@ let g:spf13_bundle_groups=['general', 'writing', 'programming', 'neocomplete', '
 " Additional bundles
 Bundle 'JuliaLang/julia-vim'
 Bundle 'lervag/vimtex'
+Bundle 'derekwyatt/vim-scala'
 "Bundle 'LaTeX-Box-Team/LaTeX-Box'
