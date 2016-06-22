@@ -16,3 +16,9 @@ let g:spf13_leader='\'
 
 " Auto conversion LaTeX -> Unicode in .jl (needs julia-vim)
 let g:latex_to_unicode_auto = 1
+
+" Do not beep!
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
