@@ -1,0 +1,66 @@
+%% Compile with LuaTex
+
+\documentclass[%
+    11pt,
+    letterpaper,
+    titlepage
+]{article}
+
+\usepackage{fontspec}                   % For setting default fonts
+\usepackage{titlesec}                   % For setting section fonts
+\defaultfontfeatures{Ligatures=TeX}     % Supports LaTeX quoting style
+
+\setromanfont{Latin Modern Roman}
+\setsansfont{Roboto}
+\setmonofont{Source Code Pro}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\titleformat*{\section}{\Large\bfseries\rmfamily}
+\titleformat*{\subsection}{\large\bfseries\rmfamily}
+\titleformat*{\subsubsection}{\normalsize\bfseries\rmfamily}
+
+\usepackage{graphicx}                   % Useful for inserting images
+\usepackage{siunitx}                    % For SI units
+\usepackage[cmex10,intlimits]{amsmath}  % For the math
+\usepackage{amsthm}                     % The package used for theorems
+\usepackage{amssymb}                    % Math symbols
+\usepackage{amsfonts}                   % For script R and other symbols
+\usepackage[%
+%    hidelinks,
+    colorlinks=true,
+    allcolors=magenta,
+    pagebackref=false
+]{hyperref}                             % Make references clickable
+\usepackage[all]{hypcap}                % Figures visible on click
+\usepackage[%
+    final,
+    tracking=true,
+    factor=1100
+]{microtype}                            % For overall prettiness
+\usepackage{booktabs}                   % For pretty tables.
+\usepackage{array}                      % For pretty tables.
+\usepackage{enumitem}                   % For custom enumeration
+
+% On Microtype:
+% Intro: http://www.khirevich.com/latex/microtype/
+% Manual: http://mirror.math.ku.edu/tex-archive/macros/latex/contrib/microtype/microtype.pdf
+
+\input{./macros.tex}                   % Some useful macros
+
+\begin{document}
+
+% Paper title
+\title{}
+
+\author{}
+
+\date{\today}
+
+% Make the title area
+\maketitle
+
+\bibliographystyle{apalike}
+\bibliography{refs}
+
+\end{document}
