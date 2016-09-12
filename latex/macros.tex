@@ -69,6 +69,12 @@
 \DeclareMathOperator*{\Var}{\mathrm{Var}}
 \DeclareMathOperator*{\Cov}{\mathrm{Cov}}
 
+% Interior of a set. Credits:
+% http://tex.stackexchange.com/questions/295579/interior-of-a-set-notation
+\newcommand{\interior}[1]{%
+  {\kern0pt#1}^{\mathrm{o}}%
+}
+
 % Theorems, Lemmas and the like. Note that this requires the amsthm package
 \newtheorem{thm}{Theorem}
 \newtheorem{cor}[thm]{Corollary}
