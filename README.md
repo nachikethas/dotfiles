@@ -1,3 +1,3 @@
 Config
 =======
-A collection of config files for commonly used utilities
+A collection of configuration files for commonly used utilities
