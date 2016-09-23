@@ -1,6 +1,3 @@
-# See https://www.ctan.org/tex-archive/support/latexmk/example_rcfiles
-# for more example_rcfiles.
-#
 # This shows how to use lualatex (http://en.wikipedia.org/wiki/XeTeX)
 # with latexmk.  Lualatex uses Unicode and "supporting modern font
 # technologies such as OpenType or Apple Advanced Typography.
@@ -18,3 +15,4 @@
 $pdflatex = 'lualatex %O %S';
 $pdf_mode = 1;
 $postscript_mode = $dvi_mode = 0;
+$bibtex_use = 2;
