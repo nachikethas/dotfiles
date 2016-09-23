@@ -1,9 +1,9 @@
-# This shows how to use lualatex (http://en.wikipedia.org/wiki/XeTeX)
+# See https://www.ctan.org/tex-archive/support/latexmk/example_rcfiles
+# for more example_rcfiles.
+#
+# This shows how to use lualatex (http://en.wikipedia.org/wiki/LuaTeX)
 # with latexmk.  Lualatex uses Unicode and "supporting modern font
 # technologies such as OpenType or Apple Advanced Typography.
-#
-#   WARNING: latexmk.pl is changing, and plans to have more internal
-#     support for lualatex.
 #
 # Since lualatex only produces pdf files, it is a replacement for
 # pdflatex.  To make it your default typesetting engine within latexmk
