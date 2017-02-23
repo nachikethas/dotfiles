@@ -1,26 +1,36 @@
-% Prior to using this template, please update the appropriate
-% style files used.
 \documentclass[
     pdftex,
     10pt,
     conference,
-    draft,
-    letterpaper
+    final,
+    letterpaper,
 ]{IEEEtran}
+
+\ifCLASSOPTIONcompsoc%
+  % The IEEE Computer Society needs nocompress option
+  % requires cite.sty v4.0 or later (November 2003)
+  \usepackage[nocompress]{cite}
+\else
+  % normal IEEE
+  \usepackage{cite}
+\fi
 
 \usepackage[utf8]{inputenc}             % Input encoding in UTF-8
 \usepackage[T1]{fontenc}                % Use T1 fonts for output
-\usepackage{lmodern}                    % Use Latin Modern instead of Computer Modern
-\usepackage[dvips]{graphicx}            % Useful for inserting images
+\usepackage[pdftex]{graphicx}                   % Useful for inserting images
 \usepackage{siunitx}                    % For SI units
 \usepackage[cmex10,intlimits]{amsmath}  % For the math
 \usepackage{amsthm}                     % The package used for theorems
 \usepackage{amssymb}                    % Math symbols
-\usepackage{amsfonts}                   % For script R and other symbols
 \usepackage[
 %    hidelinks,
+    bookmarks=true,
+    bookmarksnumbered=true,
+    pdfpagemode=UseOutlines,
+    plainpages=false,
+    pdfpagelabels=true,
     colorlinks=true,
-    allcolors=magenta,
+    allcolors=black,
     pagebackref=false
 ]{hyperref}                             % Make references clickable
 \usepackage[all]{hypcap}                % Figures visible on click
@@ -38,39 +48,71 @@
 % Intro: http://www.khirevich.com/latex/microtype/
 % Manual: http://mirror.math.ku.edu/tex-archive/macros/latex/contrib/microtype/microtype.pdf
 
-\input{./macros.tex}                   % Some useful macros
+%\input{tex/macros}                      % Some useful macros
 
 \begin{document}
 
 % Paper title
-\title{}
+\title{Coconut-based Algorithms}
 
-\author{}
+% Author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{Michael Shell}
+\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
+Georgia Institute of Technology\\
+Atlanta, Georgia 30332--0250\\
+Email: http://www.michaelshell.org/contact.html}
+\and
+\IEEEauthorblockN{Homer Simpson}
+\IEEEauthorblockA{Twentieth Century Fox\\
+Springfield, USA\\
+Email: homer@thesimpsons.com}
+}
+
+% conference papers do not typically use \thanks and this command
+% is locked out in conference mode. If really needed, such as for
+% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
+% after \documentclass
+
+% for over three affiliations, or if they all won't fit within the width
+% of the page, use this alternative format:
+%
+%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
+%Homer Simpson\IEEEauthorrefmark{2},
+%James Kirk\IEEEauthorrefmark{3},
+%Montgomery Scott\IEEEauthorrefmark{3} and
+%Eldon Tyrell\IEEEauthorrefmark{4}}
+%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
+%Georgia Institute of Technology,
+%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
+%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
+%Email: homer@thesimpsons.com}
+%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
+%Telephone: (800) 555--1212, Fax: (888) 555--1212}
+%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant
+%Street, Los Angeles, California 90210--4321}}
 
 % Make the title area
 \maketitle
 
 \begin{abstract}
-%\input{./tex/abstract.tex}
+%\input{tex/abstract}
 \end{abstract}
 
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
-%\IEEEpeerreviewmaketitle
-
 \section{Introduction}\label{sec:intro}
-%\input{./tex/intro.tex}
+%\input{tex/intro}
 
-\section{Related Work}\label{sec:related}
-%\input{./tex/relatedW.tex}
+\section{Related Work}\label{sec:reltd}
+%\input{tex/related}
 
-\section{Evaluation}\label{sec:evaluation}
-%\input{./tex/evaluation.tex}
+\section{Evaluation}\label{sec:evaln}
+%\input{tex/evaluation}
 
-\section{Conclusion}\label{sec:conclusion}
-%\input{./tex/conclusion.tex}
+\section{Conclusion}\label{sec:cncln}
+%\input{tex/conclusion}
 
 %\bibliographystyle{IEEEtran}
-%\bibliography{IEEEabrv,refs}
+%\bibliography{IEEEabrv,main}
 
 \end{document}
