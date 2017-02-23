@@ -29,8 +29,13 @@
 \usepackage{bm}                         % For bold vectors (\bm)
 \usepackage[%
 %    hidelinks,
-    colorlinks=true,
-    allcolors=magenta,
+    bookmarks=true,
+    bookmarksnumbered=true,
+    pdfpagemode=UseOutlines,
+    plainpages=false,
+    pdfpagelabels=true,
+    colorlinks=magenta,
+    allcolors=black,
     pagebackref=false
 ]{hyperref}                             % Make references clickable
 \usepackage[all]{hypcap}                % Figures visible on click
@@ -41,13 +46,13 @@
 ]{microtype}                            % For overall prettiness
 \usepackage{booktabs}                   % For pretty tables.
 \usepackage{array}                      % For pretty tables.
-\usepackage{enumitem}                   % For custom enumeration
+\usepackage[inline]{enumitem}           % For custom enumeration
 
 % On Microtype:
 % Intro: http://www.khirevich.com/latex/microtype/
 % Manual: http://mirror.math.ku.edu/tex-archive/macros/latex/contrib/microtype/microtype.pdf
 
-\input{./macros.tex}                   % Some useful macros
+%\input{tex/macros}                      % Some useful macros
 
 \begin{document}
 
