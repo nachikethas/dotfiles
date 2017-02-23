@@ -133,11 +133,22 @@
   {\kern0pt#1}^{\mathrm{o}}%
 }
 
-% Theorems, Lemmas and the like. Note that this requires the amsthm package
+%% Theorems, Lemmas and the like. Note that this requires the amsthm package
+% ACM Format
+%\newtheorem{thm}{Theorem}[section]
+%\newtheorem{con}[theorem]{Conjecture}
+%\newtheorem{cor}[theorem]{Corollary}
+%\newtheorem{prp}[theorem]{Proposition}
+%\newtheorem{lem}[theorem]{Lemma}
+%\newdef{dfn}[theorem]{Definition}
+%\newdef{rem}[theorem]{Remark}
+
+% IEEE Format
 \newtheorem{thm}{Theorem}
 \newtheorem{cor}[thm]{Corollary}
 \newtheorem*{cor*}{Corollary}
 \newtheorem{lem}{Lemma}
+\newtheorem{con}{Conjecture}
 
 \theoremstyle{remark}
 \newtheorem{rem}{Remark}
