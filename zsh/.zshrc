@@ -73,6 +73,9 @@ antigen-bundle Tarrasch/zsh-bd
 # Colors for directories
 antigen bundle joel-porquet/zsh-dircolors-solarized
 
+# System information in tmux status line
+antigen bundle thewtex/tmux-mem-cpu-load
+
 # Themes
 
 ## YS
