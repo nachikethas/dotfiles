@@ -12,7 +12,7 @@ bindkey -v
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/sooraj/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -36,7 +36,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Using antigen to manage all zsh plugins.
 # See https://github.com/zsh-users/antigen
-source /home/sooraj/Code/antigen/antigen.zsh
+source Code/config/zsh/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh

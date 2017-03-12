@@ -7,3 +7,6 @@
 [submodule ".vim/pack/nachikethas/start/vim-airline-themes"]
 	path = .vim/pack/nachikethas/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "zsh/antigen"]
+	path = zsh/antigen
+	url = https://github.com/zsh-users/antigen.git
