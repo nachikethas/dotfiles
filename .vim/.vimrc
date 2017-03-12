@@ -162,8 +162,16 @@ nnoremap <C-L> :nohl<CR><C-L>
 "
 " Options to configure plugins
 
+" vim-airline
 " Enable powerline fonts for pretty Airline.
 " Remember to install one of the powerline fonts from
 " URL: https://github.com/powerline/fonts
 " prior to using the option below.
 let g:airline_powerline_fonts=1
+
+" vim-airline-themes
+let g:airline_theme='solarized'
+
+" vim-colors-solarized
+set background=dark
+colorscheme solarized
