@@ -126,6 +126,11 @@ set notimeout ttimeout ttimeoutlen=200
 " Use <F11> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F11>
 
+" Set directories for ancillary files
+set undodir=~/.vim/undo//
+set backupdir=~/.vim/backup//
+set directory=~/.vim/backup//
+
 "------------------------------------------------------------
 " Indentation options {{{1
 "
@@ -142,6 +147,9 @@ set expandtab
 "set shiftwidth=4
 "set tabstop=4
 
+" Auto wrap lines at 72 characters
+set wrap
+set textwidth=72
 
 "------------------------------------------------------------
 " Mappings {{{1
@@ -174,3 +182,10 @@ let g:airline_theme='solarized'
 " vim-colors-solarized
 set background=dark
 colorscheme solarized
+
+" vimtex
+let maplocalleader="\\"
+" Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being
+" loaded.  The following changes the default filetype back to 'tex':
+let g:tex_flavor = 'latex'
