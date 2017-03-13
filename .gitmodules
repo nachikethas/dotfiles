@@ -22,3 +22,6 @@
 [submodule ".vim/pack/nachikethas/opt/tmuxline.vim"]
 	path = .vim/pack/nachikethas/opt/tmuxline.vim
 	url = https://github.com/edkolev/tmuxline.vim.git
+[submodule ".vim/pack/nachikethas/start/vimtex"]
+	path = .vim/pack/nachikethas/start/vimtex
+	url = https://github.com/lervag/vimtex.git
