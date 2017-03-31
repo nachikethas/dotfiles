@@ -25,6 +25,9 @@ alias df='df -kTh'
 alias tmux='tmux -2'
 alias tls='tmux list-sessions'
 
+# Mutt
+alias mutt='cd ~/Desktop && mutt'
+
 #-------------------------------------------------------------
 # The 'ls' family (this assumes you use a recent GNU ls).
 #-------------------------------------------------------------
