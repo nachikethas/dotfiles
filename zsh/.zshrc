@@ -99,3 +99,6 @@ if [ -f ~/.zshrc_aliases ]; then
 else
     print "404: ~/.zshrc_aliases not found."
 fi
+
+# Random cow with fortune
+fortune -a | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)
