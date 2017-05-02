@@ -14,7 +14,7 @@ alias which='type -a'
 
 alias ud='sudo pacman -Syu'
 alias jl='julia'
-alias vi='vim'
+alias vi='nvim'
 alias ml='matlab -nodisplay -nosplash'
 
 # Makes a more readable output.
