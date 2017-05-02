@@ -179,9 +179,10 @@ let g:airline_powerline_fonts=1
 " vim-airline-themes
 let g:airline_theme='solarized'
 
-" vim-colors-solarized
+" NeoSolarized
+set termguicolors
+colorscheme NeoSolarized
 set background=dark
-colorscheme solarized
 
 " vimtex
 let maplocalleader="\\"
