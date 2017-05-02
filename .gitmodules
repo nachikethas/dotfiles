@@ -1,9 +1,6 @@
 [submodule ".vim/pack/nachikethas/start/vim-airline"]
 	path = .vim/pack/nachikethas/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
-[submodule ".vim/pack/nachikethas/start/vim-colors-solarized"]
-	path = .vim/pack/nachikethas/start/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule ".vim/pack/nachikethas/start/vim-airline-themes"]
 	path = .vim/pack/nachikethas/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
