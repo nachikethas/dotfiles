@@ -14,7 +14,6 @@ alias which='type -a'
 
 alias ud='sudo pacman -Syu'
 alias jl='julia'
-alias vi='nvim'
 alias ml='matlab -nodisplay -nosplash'
 
 # Makes a more readable output.
@@ -27,6 +26,11 @@ alias tls='tmux list-sessions'
 
 # Mutt
 alias mutt='cd ~/Desktop && mutt'
+
+# Vim
+alias nv='nvim'
+alias vim='vim --servername VIM'
+alias vi='vim'
 
 #-------------------------------------------------------------
 # The 'ls' family (this assumes you use a recent GNU ls).
