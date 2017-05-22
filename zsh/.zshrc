@@ -52,7 +52,7 @@ antigen bundle command-not-found
 
 # Enable autoenv
 # See: https://github.com/Tarrasch/zsh-autoenv
-antigen-bundle Tarrasch/zsh-autoenv
+antigen bundle Tarrasch/zsh-autoenv
 
 # More vi-like key bindings for zsh. See:
 # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/vi-mode
@@ -70,7 +70,7 @@ antigen bundle tarruda/zsh-autosuggestions
 bindkey '^e' autosuggest-accept
 
 # bd to go back a directory
-antigen-bundle Tarrasch/zsh-bd
+antigen bundle Tarrasch/zsh-bd
 
 # Colors for directories
 antigen bundle joel-porquet/zsh-dircolors-solarized
