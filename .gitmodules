@@ -25,3 +25,6 @@
 [submodule ".vim/pack/nachikethas/start/YouCompleteMe"]
 	path = .vim/pack/nachikethas/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule ".vim/pack/nachikethas/start/julia-vim"]
+	path = .vim/pack/nachikethas/start/julia-vim
+	url = https://github.com/JuliaEditorSupport/julia-vim.git
