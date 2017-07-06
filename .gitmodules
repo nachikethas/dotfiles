@@ -28,3 +28,6 @@
 [submodule ".vim/pack/nachikethas/start/julia-vim"]
 	path = .vim/pack/nachikethas/start/julia-vim
 	url = https://github.com/JuliaEditorSupport/julia-vim.git
+[submodule ".vim/pack/nachikethas/start/syntastic"]
+	path = .vim/pack/nachikethas/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
