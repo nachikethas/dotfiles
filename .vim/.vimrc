@@ -120,6 +120,10 @@ set cmdheight=2
 " Display line numbers on the left
 set number
 
+" Always check spelling
+set spelllang=en_us
+set spell
+
 " Quickly time out on keycodes, but never time out on mappings
 set notimeout ttimeout ttimeoutlen=200
 
@@ -186,7 +190,11 @@ set background=dark
 
 " vimtex
 let maplocalleader="\\"
+
 " Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being
 " loaded.  The following changes the default filetype back to 'tex':
 let g:tex_flavor = 'latex'
+
+" Don't open quickfix window if there are only warings
+let g:vimtex_quickfix_open_on_warning=0
