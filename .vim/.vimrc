@@ -168,6 +168,9 @@ map Y y$
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
+" Use <ESC> to exit terminal mode
+tnoremap <Esc> <C-\><C-n>
+
 "------------------------------------------------------------
 " Plugin Options {{{1
 "
