@@ -10,7 +10,7 @@ git clone --recursive https://github.com/nachikethas/config.git
 To pull in all upstream changes, use
 
 ```bash
-git submodule update --remote
+git submodule update --remote --merge
 ```
 
 To delete a submodule
