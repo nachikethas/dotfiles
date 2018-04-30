@@ -200,7 +200,12 @@ let maplocalleader="\\"
 let g:tex_flavor = 'latex'
 
 " Don't open quickfix window if there are only warings
-let g:vimtex_quickfix_open_on_warning=0
+let g:vimtex_quickfix_open_on_warning = 0
+
+" Matching may become computationally intensive for complex LaTeX
+" documents. the following option is recommended to delay highlighting
+" slightly while navigating
+let g:matchup_matchparen_deferred = 1
 
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf = "~/Code/config/ycm_extra_conf.py"
