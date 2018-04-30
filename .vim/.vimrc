@@ -201,3 +201,6 @@ let g:tex_flavor = 'latex'
 
 " Don't open quickfix window if there are only warings
 let g:vimtex_quickfix_open_on_warning=0
+
+" YouCompleteMe
+let g:ycm_global_ycm_extra_conf = "~/Code/config/ycm_extra_conf.py"
