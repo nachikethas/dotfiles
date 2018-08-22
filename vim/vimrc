@@ -19,7 +19,10 @@ set nocompatible
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
 " and for plugins that are filetype specific.
-filetype indent plugin on
+"filetype indent plugin on
+
+" Required for Vundle. Turn it back on after Vundle plugin processing
+filetype off
 
 " Enable syntax highlighting
 syntax on
@@ -171,6 +174,31 @@ nnoremap <C-L> :nohl<CR><C-L>
 " Use <ESC> to exit terminal mode
 tnoremap <Esc> <C-\><C-n>
 
+
+"------------------------------------------------------------
+" Plugin Install {{{1
+"
+" Set shell to bash before updating plugins
+"set shell=/bin/bash
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+call vundle#begin()
+
+" install Vundle bundles
+if filereadable(expand("~/.vim/.vimrc.bundles"))
+  source ~/.vim/.vimrc.bundles
+endif
+
+call vundle#end()
+
+" ensure ftdetect et al work by including this after the Vundle stuff
+filetype plugin indent on
+
 "------------------------------------------------------------
 " Plugin Options {{{1
 "
@@ -183,6 +211,12 @@ tnoremap <Esc> <C-\><C-n>
 " prior to using the option below.
 let g:airline_powerline_fonts=1
 
+"Disable spell detection (it's always on)
+let g:airline_detect_spell=0
+
+" Don't display the spelling language
+let g:airline_detect_spelllang=0
+
 " vim-airline-themes
 let g:airline_theme='solarized'
 
@@ -190,6 +224,9 @@ let g:airline_theme='solarized'
 set termguicolors
 colorscheme NeoSolarized
 set background=dark
+
+" Fix spelling errors not highlighted in terminal vim
+hi SpellBad cterm=underline
 
 " vimtex
 let maplocalleader="\\"
