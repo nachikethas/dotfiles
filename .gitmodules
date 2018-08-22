@@ -1,33 +1,3 @@
-[submodule ".vim/pack/nachikethas/start/vim-airline"]
-	path = .vim/pack/nachikethas/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule ".vim/pack/nachikethas/start/vim-airline-themes"]
-	path = .vim/pack/nachikethas/start/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule "zsh/antigen"]
 	path = zsh/antigen
 	url = https://github.com/zsh-users/antigen.git
-[submodule ".vim/pack/nachikethas/start/vim-fugitive"]
-	path = .vim/pack/nachikethas/start/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule ".vim/pack/nachikethas/start/vim-gitgutter"]
-	path = .vim/pack/nachikethas/start/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter.git
-[submodule ".vim/pack/nachikethas/opt/tmuxline.vim"]
-	path = .vim/pack/nachikethas/opt/tmuxline.vim
-	url = https://github.com/edkolev/tmuxline.vim.git
-[submodule ".vim/pack/nachikethas/start/vimtex"]
-	path = .vim/pack/nachikethas/start/vimtex
-	url = https://github.com/lervag/vimtex.git
-[submodule ".vim/pack/nachikethas/start/NeoSolarized"]
-	path = .vim/pack/nachikethas/start/NeoSolarized
-	url = https://github.com/icymind/NeoSolarized.git
-[submodule ".vim/pack/nachikethas/start/YouCompleteMe"]
-	path = .vim/pack/nachikethas/start/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
-[submodule ".vim/pack/nachikethas/start/julia-vim"]
-	path = .vim/pack/nachikethas/start/julia-vim
-	url = https://github.com/JuliaEditorSupport/julia-vim.git
-[submodule ".vim/pack/nachikethas/start/syntastic"]
-	path = .vim/pack/nachikethas/start/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
