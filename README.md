@@ -4,7 +4,7 @@ A collection of configuration files for commonly used utilities. To
 clone the repo including the submodules, use 
 
 ```bash
-git clone --recursive https://github.com/nachikethas/config.git
+git clone --recursive <repo>
 ```
 
 To pull in all upstream changes, use
