@@ -232,4 +232,4 @@ let g:vimtex_quickfix_open_on_warning = 0
 let g:matchup_matchparen_deferred = 1
 
 " YouCompleteMe
-let g:ycm_global_ycm_extra_conf = "~/Code/config/ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "~/.vim/plugs/ycm_extra_conf.py"
