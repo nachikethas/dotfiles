@@ -1,4 +1,4 @@
-Config
+dotfiles
 =======
 A collection of configuration files for commonly used utilities. To
 clone the repo including the submodules, use 
