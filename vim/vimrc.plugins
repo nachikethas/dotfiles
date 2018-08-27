@@ -1,0 +1,15 @@
+Plug 'JuliaEditorSupport/julia-vim'
+Plug 'iCyMind/NeoSolarized'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'lervag/vimtex'
+
+let g:ycm_install = './install.py --clang-completer --gocode-completer --system-libclang'
+Plug 'Valloric/YouCompleteMe', { 'do': g:ycm_install }
+
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-eunuch'
+Plug 'scrooloose/nerdtree'
+Plug 'w0rp/ale'
