@@ -38,7 +38,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Using antigen to manage all zsh plugins.
 # See https://github.com/zsh-users/antigen
-source ~/Code/config/zsh/antigen/antigen.zsh
+source ~/Code/dotfiles/zsh/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
