@@ -13,3 +13,14 @@ set -x FZF_DEFAULT_OPTS '
   --color=fg:#839496,header:#586e75,info:#cb4b16,pointer:#719e07
   --color=marker:#719e07,fg+:#839496,prompt:#719e07,hl+:#719e07
 '
+# set path for nodejs binaries
+set PATH $PATH ~/.node_modules/bin
+
+# user wide installations for nodejs packages
+set -x npm_config_prefix '~/.node_modules'
+
+# setup completions for fish in kitty
+kitty + complete setup fish | source
+
+# dircolors for fish. Configure in ~/.dir_colors
+eval (dircolors -c ~/.dir_colors)
