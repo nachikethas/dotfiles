@@ -22,5 +22,11 @@ set -x npm_config_prefix '~/.node_modules'
 # setup completions for fish in kitty
 kitty + complete setup fish | source
 
+# set vim as the default editor
+set EDITOR /usr/bin/vim
+
 # dircolors for fish. Configure in ~/.dir_colors
 eval (dircolors -c ~/.dir_colors)
+
+# set color for pure prompt
+set pure_color_prompt_on_success $pure_color_light
