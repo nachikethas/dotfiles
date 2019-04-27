@@ -1,6 +1,6 @@
 # Solarized dark colours
 # See https://github.com/seebi/tmux-colors-solarized
-set-option -g status-style fg=yellow,bg=black,default
+set-option -g status-style fg=yellow,bg=black
 set-option -g pane-border-style fg=black
 set-option -g pane-active-border-style fg=brightgreen
 set-option -g message-style fg=brightred,bg=black
@@ -19,10 +19,10 @@ set-window-option -g clock-mode-colour green #green
 
 set -g status-justify "left"
 set -g status "on"
-set -g status-left "#[fg=black,bg=yellow,bold] #S #[fg=yellow,bg=black,default] "
+set -g status-left "#[fg=black,bg=yellow,bold] #S #[fg=yellow,bg=black] "
 
 # Display CPU and Memory in the status bar
 # https://github.com/thewtex/tmux-mem-cpu-load
 set -g status-interval 2
-set -g status-right "#(tmux-mem-cpu-load --interval 2)#[default]"
+set -g status-right "#[fg=yellow,bg=default] #(tmux-mem-cpu-load --interval 2) #[default]"
 set -g status-right-length 60
