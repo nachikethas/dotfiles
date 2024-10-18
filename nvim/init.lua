@@ -1,2 +1,2 @@
-require('naj.plugins')
 require('naj.settings')
+require('naj.lazy')
