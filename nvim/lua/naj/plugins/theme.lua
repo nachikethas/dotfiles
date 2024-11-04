@@ -29,6 +29,4 @@ return {
   },
   -- Syntax highlighting for Kitty terminal config files.
   { 'fladson/vim-kitty' },
-  -- Syntax highlighting for fish shell scripts.
-  { 'dag/vim-fish' },
 }
