@@ -22,7 +22,7 @@ function org_dated_files
     set -l prefix (string replace -a - '' $file_date)
     set -l extension (string lower (path extension $file))
     set dst_file (path normalize (string join '/' $_flag_path (path change-extension $extension (string join _ $prefix $_flag_description $_flag_suffix))))
-    cp $file $dst_file
+    cp --backup=numbered $file $dst_file
     echo "Copied $file to $dst_file"
   end
 end
