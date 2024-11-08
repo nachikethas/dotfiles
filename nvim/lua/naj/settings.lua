@@ -5,7 +5,7 @@
 vim.opt.number = true
 
 -- Enable mouse in every mode.
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 
 -- Ignore uppercase letters when executing a search.
 vim.opt.ignorecase = true
@@ -41,3 +41,14 @@ vim.opt.confirm = true
 
 -- Enable 24-bit RGB color in the TUI
 vim.opt.termguicolors = true
+
+-- Needed to enable UI features in obsidian.nvim.
+-- Default value is 0.
+vim.opt_local.conceallevel = 1
+
+-- Enable spell checking.
+vim.opt.spelllang = "en_us"
+vim.opt.spell = true
+
+-- Narrow default textwidth.
+vim.opt.textwidth = 78
