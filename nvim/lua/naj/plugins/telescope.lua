@@ -1,6 +1,6 @@
 return {
   { "nvim-lua/plenary.nvim" },
-  { 
+  {
     "nvim-telescope/telescope-fzf-native.nvim",
     build = "make",
   },
@@ -11,5 +11,5 @@ return {
       require("telescope").setup({})
       require("telescope").load_extension("fzf")
     end,
-  }
+  },
 }

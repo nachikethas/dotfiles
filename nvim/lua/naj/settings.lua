@@ -49,6 +49,3 @@ vim.opt_local.conceallevel = 1
 -- Enable spell checking.
 vim.opt.spelllang = "en_us"
 vim.opt.spell = true
-
--- Narrow default textwidth.
-vim.opt.textwidth = 78
