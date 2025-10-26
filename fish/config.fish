@@ -1,32 +1,23 @@
 # set aliases
 source ~/.config/fish/aliases.fish
 
-# set the colors to use the solarized color scheme
-source ~/.config/fish/solarized.fish
+# set the colors to use the tokyonight color scheme
+source ~/.config/fish/tokyonight_night.fish
 
-# set path for local binaries, ruby gems and pip binaries
-set PATH $PATH (ruby -e "print Gem.user_dir")/bin ~/.local/bin
+# set NeoVim as the default editor
+set -x EDITOR /usr/bin/nvim
 
-# use solarized color scheme for fzf
-set -x FZF_DEFAULT_OPTS '
-  --color=bg+:#073642,bg:#002b36,spinner:#719e07,hl:#586e75
-  --color=fg:#839496,header:#586e75,info:#cb4b16,pointer:#719e07
-  --color=marker:#719e07,fg+:#839496,prompt:#719e07,hl+:#719e07
-'
-# set path for nodejs binaries
-set PATH $PATH ~/.node_modules/bin
+# set the path for GO
+set -x GOPATH $HOME/Code/go
 
-# user wide installations for nodejs packages
-set -x npm_config_prefix '~/.node_modules'
+# Use Wayland as the backend for Electron apps (such as Signal)
+set -x ELECTRON_OZONE_PLATFORM_HINT wayland
 
-# setup completions for fish in kitty
-kitty + complete setup fish | source
+# Use Wayland for QT applications such as masterpdfeditor5
+set -x QT_QPA_PLATFORM wayland
 
-# set vim as the default editor
-set EDITOR /usr/bin/vim
+# Use vi key bindings
+set -g fish_key_bindings fish_vi_key_bindings
 
-# dircolors for fish. Configure in ~/.dir_colors
-eval (dircolors -c ~/.dir_colors)
-
-# set color for pure prompt
-set pure_color_prompt_on_success $pure_color_light
+# Add zoxide to fish shell
+zoxide init fish | source
