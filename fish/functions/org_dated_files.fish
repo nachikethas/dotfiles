@@ -16,7 +16,7 @@ function org_dated_files
     else if test -n "$file_date_basic"
       set -f file_date $file_date_basic
     else
-      echo 'Could not extract date from file name (ISO 8601 yyyy-mm-dd or yyymmdd). Skipping' $file
+      echo 'Could not extract date from file name (ISO 8601 yyyy-mm-dd or yyyymmdd). Skipping' $file
       continue
     end
     set -l prefix (string replace -a - '' $file_date)
