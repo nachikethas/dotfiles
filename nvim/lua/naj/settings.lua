@@ -44,7 +44,7 @@ vim.opt.termguicolors = true
 
 -- Needed to enable UI features in obsidian.nvim.
 -- Default value is 0.
-vim.opt_local.conceallevel = 1
+vim.opt_local.conceallevel = 2
 
 -- Enable spell checking.
 vim.opt.spelllang = "en_us"
