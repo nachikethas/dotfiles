@@ -1,4 +1,3 @@
--------------------------------------------------------------
 -- General Usability Options
 
 -- When we enable number Neovim starts showing the line number in the gutter.
@@ -49,3 +48,9 @@ vim.opt_local.conceallevel = 2
 -- Enable spell checking.
 vim.opt.spelllang = "en_us"
 vim.opt.spell = true
+-- Disable spell checking in terminal buffers.
+vim.api.nvim_create_autocmd("TermOpen", {
+  group = vim.api.nvim_create_augroup("custom_term_settings", { clear = true }),
+  pattern = "*",
+  command = "setlocal nospell",
+})

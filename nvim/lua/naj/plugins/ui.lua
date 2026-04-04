@@ -29,4 +29,21 @@ return {
   },
   -- Syntax highlighting for Kitty terminal config files.
   { "fladson/vim-kitty" },
+  -- Syntax highlighting for fish shell scripts.
+  { "dag/vim-fish" },
+  -- Toggle between relative and absolute line numbers automatically.
+  { "sitiom/nvim-numbertoggle" },
+  -- Highlight trailing whitespace.
+  {
+    "nvim-mini/mini.trailspace",
+    version = false,
+    config = function ()
+      require("mini.trailspace").setup()
+    end,
+  },
+  -- Highlight changed lines in the gutter.
+  {
+    "mhinz/vim-signify",
+    config = function () end,
+  }
 }
