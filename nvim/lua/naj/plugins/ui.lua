@@ -6,10 +6,6 @@ return {
     opts = {
       auto_integrations = true,
     },
-    config = function()
-      -- load the colorscheme here
-      vim.cmd([[colorscheme catppuccin-nvim]])
-    end,
   },
   -- syntax highlighting for kitty terminal config files.
   { "fladson/vim-kitty" },
