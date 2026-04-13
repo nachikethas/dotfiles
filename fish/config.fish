@@ -1,8 +1,8 @@
 # set aliases
 source ~/.config/fish/aliases.fish
 
-# set the colors to use the tokyonight color scheme
-source ~/.config/fish/tokyonight_night.fish
+# set the colors to use the catppuccin-mocha color scheme
+fish_config theme choose catppuccin-mocha
 
 # set NeoVim as the default editor
 set -x EDITOR /usr/bin/nvim
