@@ -21,3 +21,6 @@ set -g fish_key_bindings fish_vi_key_bindings
 
 # Add zoxide to fish shell
 zoxide init fish | source
+
+# Set up fzf key bindings
+fzf --fish | source
